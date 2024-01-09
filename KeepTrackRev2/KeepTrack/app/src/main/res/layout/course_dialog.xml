@@ -1,0 +1,206 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerPadding="0dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintCircleRadius="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/titleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_assignment_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Course Title"
+                android:inputType="text"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="@color/darkColorDate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/startDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_outline_event_available_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/startDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="?attr/dialogDateColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/endDateLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startDateLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_outline_event_available_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/endDateInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="?attr/dialogDateColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/statusLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endDateLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_assignment_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <Spinner
+                android:id="@+id/edit_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:entries="@array/status_array"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="@color/darkColorDate" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/instructorNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/statusLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_assignment_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/edit_instructorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Instructor Name"
+                android:inputType="text"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="@color/darkColorDate" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instructorPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructorNameLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_assignment_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/edit_instructorPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Instructor Phone"
+                android:inputType="phone"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="@color/darkColorDate" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/instructorEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/instructorPhoneLayout"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:background="@drawable/ic_assignment_pink_24"
+                tools:ignore="ContentDescription" />
+
+            <EditText
+                android:id="@+id/edit_instructorEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:hint="Instructor Email"
+                android:inputType="textEmailAddress"
+                android:textColor="?attr/dialogTextColor"
+                android:textColorHint="@color/darkColorDate" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

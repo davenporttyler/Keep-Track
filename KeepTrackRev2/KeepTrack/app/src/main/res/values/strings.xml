@@ -1,0 +1,32 @@
+<resources>
+    <string name="portraitText">Portrait</string>
+    <string name="landscapeText">Landscape</string>
+    <string name="app_name">Keep Track</string>
+    <string name="listEmptyText">
+<![CDATA[
+<p>Keep Track will help you manage your Terms, Courses, and Assessments!</p>
+<p>Press the "+" to begin </p>
+]]>
+</string>
+    <string name="actionBarTitle">Keep Track</string>
+    <string name="editTaskHint">My Task</string>
+    <string name="dialogDate">Date</string>
+    <string name="dialogTime">Time</string>
+    <string name="cardTitle">Title</string>
+    <string name="cardDate">sub title</string>
+    <string name="cardTime">sub title</string>
+
+    <string-array name="status_array">
+        <item>IN PROGRESS</item>
+        <item>COMPLETED</item>
+        <item>DROPPED</item>
+        <item>PLAN TO TAKE</item>
+    </string-array>
+
+    <string-array name="performance_array">
+        <item>NOT SET</item>
+        <item>OA</item>
+        <item>PA</item>
+
+    </string-array>
+</resources>
